@@ -9,7 +9,7 @@
 
 body {
   height: 100%;
-  /*background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/BZBMrpQIiq3lg4cl/bitcoin-background_soj1rz2l__F0000.png);*/
+  
   background-color:   #232323;
   font-family: 'Open Sans';
   -webkit-font-smoothing: subpixel-antialiased;
@@ -20,10 +20,7 @@ div.rowinput span.select2.select2-container{
   width: 100% !important;
 }
 
-/*.rowinput{
-  padding-left: 2%;
-  padding-right: 2%;
-}*/
+
 
 }
 .choose{
@@ -143,27 +140,15 @@ a{
   width: 100%;
 }
 
-[data-patch-panel='1'],
-[data-patch-panel='5'],
-[data-patch-panel='8'] {
-  background: #F5AB35;
-}
 
-[data-patch-panel='2'],
-[data-patch-panel='6'],
-[data-patch-panel='9'] {
-  background: #00B16A;
-}
 
-[data-patch-panel='3'],
-[data-patch-panel='7'],
-[data-patch-panel='10'] {
+[data-patch-panel='3']
+ {
   background: #E74C3C;
 }
 
-[data-patch-panel='4'],
-[data-patch-panel='8'],
-[data-patch-panel='12'] {
+[data-patch-panel='4']
+ {
   background: #3498DB;
 }
 
@@ -190,6 +175,8 @@ Media Queries
     margin: 1.5%;
     width: 46%;
   }
+
+  
   
   
 }
@@ -204,15 +191,9 @@ Media Queries
   .rowinput{
    
  display: flex;
- flex-flow: column wrap;
- 
-
-    
+ flex-flow: column wrap; 
 
   }
-
-
-  
 
   .patch-item {
     margin: 0.6667%;
@@ -292,9 +273,11 @@ Media Queries
 
 .modal-header{
   background-color:#2C3E50;
+  border-bottom: 1px solid #232323;
 }
 .modal-footer{
   background-color:#2C3E50;
+  border-top: 1px solid #232323;
 }
 
 
