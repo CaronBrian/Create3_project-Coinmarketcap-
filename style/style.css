@@ -1,0 +1,315 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+
+
+
+body {
+  height: 100%;
+  
+  background-color:   #232323;
+  font-family: 'Open Sans';
+  -webkit-font-smoothing: subpixel-antialiased;
+
+}
+
+div.rowinput span.select2.select2-container{
+  width: 100% !important;
+}
+
+
+
+}
+.choose{
+  
+  width: 100%;
+  font-size: 1.4rem;
+  color: white;
+  background: #2C3E50;
+  border-radius: 4px;
+
+
+
+}
+
+.choose {
+  margin: 20px 0 5px;
+  display: grid;
+  display: block;
+  margin: 20px auto;
+  max-width: 700px;
+  
+  border: none;}
+  
+
+
+
+.amount2 {
+  display: inline-block;
+  
+  box-sizing: border-box;
+  padding-left: 5px;
+
+  font-family: monospace;
+  font-size: 1.4rem;
+  color: white;
+
+  background: none;
+  border: none;
+  outline: none;
+}
+  
+
+  footer {
+ position: fixed;
+ bottom: 0;
+ left: 0;
+ width: 100%;
+
+ text-align: center;
+
+}
+
+a{
+  color: white;
+}
+
+
+
+
+.patch-button {
+  color: #FFF;
+  
+  font-size: 1em;
+  font-size: 1.5em;
+  letter-spacing: 0;
+  line-height: 150px;
+}
+
+
+
+.data {
+  background-color: #2C3E50;
+  border-radius: 5px;
+  color: #FFF;
+  margin: 4%;
+ 
+  overflow: auto;
+  padding: 2%;
+ 
+  text-align: center;
+  zoom: 1;
+  max-width: 1000px;
+}
+
+.rowinput{
+ display: flex;
+ flex-flow: column wrap;
+ margin-top: 10px;
+ padding-left: 2%;
+ padding-right: 2%;
+
+ 
+}
+
+
+
+.patch-item {
+  background-color: #FFF;
+  border-radius: 4px;
+  float: left;
+  height: 140px;
+  margin: 0 0 2% 0;
+  width: 100%;
+  line-height: 60px;
+}
+
+.patch-panel {
+  background-color: #FFF;
+  border-radius: 4px;
+  color: #FFF;
+  display: none;
+  float: left;
+  font-size: 1.5em;
+  height: 250px;
+  line-height: 250px;
+  margin: 0 0 2% 0;
+  width: 100%;
+}
+
+
+
+[data-patch-panel='3']
+ {
+  background: #E74C3C;
+}
+
+[data-patch-panel='4']
+ {
+  background: #3498DB;
+}
+
+.modal-content{
+  margin-top:150px;
+}
+/********************************
+Media Queries
+********************************/
+
+@media only screen and (min-width: 550px) {
+  h2 {
+    font-size: 3.3rem;
+  }
+  .patch-item {
+    margin: 1%;
+    width: 48%;
+  }
+  .patch-panel {
+    margin: 1%;
+    width: 98%;
+  }
+  .components {
+    margin: 1.5%;
+    width: 46%;
+  }
+
+  
+  
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .data {
+    margin: 2% auto;
+    
+    
+
+  }
+  .rowinput{
+   
+ display: flex;
+ flex-flow: column wrap; 
+
+  }
+
+  .patch-item {
+    margin: 0.6667%;
+    margin: calc(4% / 6);
+    width: 32%;
+  }
+  .patch-panel {
+    margin: 0.6667%;
+    margin: calc(4% / 6);
+    width: 98.6666%;
+    width: calc(100% - (4% / 6) * 2);
+
+  }
+  .resize {
+    margin: 50px auto -2%;
+  }
+  .wide {
+    margin: 0.6667%;
+    margin: calc(4% / 6);
+    width: 48.6666%;
+    width: calc(50% - (4% / 6) * 2);
+  }
+  .thin {
+    width: 23.6666%;
+    width: calc(25% - (4% / 6) * 2);
+  }
+}
+
+
+
+/* modal css */
+
+
+
+
+.btn-success{
+  background-color: #232323;
+  border-color: #232323;
+}
+
+.btn-success.focus, .btn-success:focus{
+  background-color: #232323;
+}
+.btn-success:hover{
+  background-color: #232323;
+  border-color: #232323;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+  background-color: #232323;
+}
+
+.btn-primary{
+  background-color: #232323;
+  border-color: #232323;
+
+}
+.btn-primary:hover{
+  background-color: #232323;
+  border-color: #232323;
+  
+}
+
+
+
+.modal-title{
+  color: white;
+  align-content: center;
+}
+.form-group{
+  color: white;
+  text-align: left;
+}
+
+.modal-body{
+  background-color: #2C3E50;
+}
+
+.modal-header{
+  background-color:#2C3E50;
+  border-bottom: 1px solid #232323;
+}
+.modal-footer{
+  background-color:#2C3E50;
+  border-top: 1px solid #232323;
+}
+
+
+.close{
+  color:white;
+}
+.close:hover{
+  color: white;
+}
+
+
+/*FOOTER*/
+.Pleasecontact:hover{
+  cursor: pointer;
+  color: gray;
+}
+
+/*placeholder color */
+::-webkit-input-placeholder { /* Chrome */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: white;
+  opacity: 1;
+}
+
+
+

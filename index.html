@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CoinmarketCap</title>
+  <link rel="icon"  href="icon/favicon-16.png">
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+
+  
+</head>
+
+<body>
+  
+
+      
+      <div class="data">What coin do you have? :
+
+      <div class ="rowinput">
+      <select id="select-coin"></select>
+      </div>
+       
+       <div class="data"> 
+      <div class="choose">Enter amount of coin :
+      <input  type="text" class="amount2" id="amount" min="1" placeholder="___________________" required>
+      </div>
+
+
+   
+  <div class="patch-item patch-button wide" data-patch-panel="4">
+    BTC
+  </br>
+  <span id="BTC"></span></div>
+  
+  
+  <div class="patch-item patch-button wide"  data-patch-panel="3">
+    USD
+     </br>
+  <span id="USD"></span></div>
+   
+  <div class="patch-item patch-button wide" data-patch-panel="4">1H
+     </br>
+  <span id="1H"></span></div>
+  
+  <div class="patch-item patch-button wide"  data-patch-panel="3">24H
+     </br>
+    <span id="24H"></span></div>
+   
+  <div class="patch-item patch-button wide"  data-patch-panel="4">7 Day </br><span id="7D"></span></div>
+  
+  <div class="patch-item patch-button wide"  data-patch-panel="3">MCAP
+     </br><span id="MCAP"></span></div>
+  
+  <div class="patch-item patch-button wide"  data-patch-panel="4">Rank </br><span id="RANK"></span></div>
+  
+  <div class="patch-item patch-button wide"  data-patch-panel="3">Total Supply </br><span id="TSUP"></span></div>
+  
+
+  
+
+<!-- Modal Contact-->
+<div class="modal fade" id="modalForm" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Contact Form</h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <p class="statusMsg"></p>
+                <form role="form">
+                    <div class="form-group">
+                        <label for="inputName">Name:</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Enter your name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail">Email:</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputMessage">Message:</label>
+                        <textarea class="form-control" id="inputMessage" placeholder="Enter your message"></textarea>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+ <script  src="js/index.js"></script> 
+
+
+
+
+</body>
+<footer>
+<a class="Pleasecontact" data-toggle="modal" data-target="#modalForm">
+    Click here to contact us 
+
+</footer>
+
+</html>
